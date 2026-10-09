@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            background-color: #f7208b;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 25px;
+        }
+
+        .logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin-left: 15px;
+        }
+
+        .intro {
+            background-color: #bac5ed;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .profile {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+        }
+
+        .name {
+            color: #087b82;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        main {
+            width: 80%;
+            max-width: 850px;
+            margin: 25px auto;
+        }
+
+        .section-title {
+            background: linear-gradient(to right, #a9b5e1, #ff2090);
+            color: rgb(255, 248, 149);
+            text-align: center;
+            padding: 5px;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .about-text {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .work {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 25px 0 35px;
+        }
+
+        .work-image {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .work-image img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border: 2px dotted #ff6189;
+            border-radius: 5px;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .work-info {
+            font-size: 13px;
+        }
+
+        .work-info ul {
+            padding-left: 20px;
+        }
+
+        .repository {
+            color: #ff3399;
+            text-decoration: underline;
+        }
+
+        .extra-lists {
+            font-size: 13px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #ff2f85;
+        }
+
+        dd {
+            margin-bottom: 8px;
+        }
+
+        .form-box {
+            width: 65%;
+            margin: 20px auto;
+            padding: 18px;
+            background-color: white;
+            border-radius: 7px;
+            box-shadow: 0 2px 8px #d0d0d0;
+            font-size: 12px;
+        }
+
+        .form-box label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        textarea {
+            height: 70px;
+        }
+
+        button {
+            width: 100%;
+            padding: 9px;
+            border: none;
+            border-radius: 4px;
+            background-color: #20ffff;
+            color: white;
+        }
+
+        footer {
+            background-color: #20ffec;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                width: 90%;
+            }
+
+            .work {
+                flex-direction: column;
+            }
+
+            .work-image {
+                width: 100%;
+            }
+
+            .form-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Personal Logo" class="logo">
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#works">My Works</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+</header>
+
+<section class="intro">
+
+    <img src="profile.jpg" alt="Profile Picture" class="profile">
+
+    <h1>
+        Hello, I'm <span class="name">Kaithlyn Oseda</span>
+    </h1>
+
+    <p class="subtitle">Aspiring Web Developer</p>
+
+</section>
+
+<main>
+
+    <!-- ABOUT ME -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            Hi! I'm <span>Kaithlyn Oseda</span>, a student passionate about
+            technology, especially in web development. I enjoy creating
+            simple and creative websites. In my free time, I explore
+            new coding tricks and design tools.
+        </p>
+
+    </section>
+
+
+    <!-- MY WORKS -->
+
+    <section id="works">
+
+        <h2 class="section-title">My Works</h2>
+
+
+        <!-- FIRST PROJECT -->
+
+        <div class="work">
+
+            <div class="work-image">
+
+                <img src="spotify.png" alt="Top 3 Spotify Artists">
+
+                <p class="caption">
+                    My Top 3 Spotify Artists
+                </p>
+
+            </div>
+
+            <div class="work-info">
+
+                <ul>
+                    <li>✓ HTML &amp; CSS Projects</li>
+                    <li>✓ Spotify Artists</li>
+                    <li>✓ Lists, Links and Images</li>
+                </ul>
+
+                <a class="repository"
+                   href="https://open.spotify.com/"
+                   target="_blank">
+                    ✓ View Spotify
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECOND PROJECT -->
+
+        <div class="work">
+
+            <div class="work-image">
+
+                <img src="movie.png" alt="Rate a Movie Form">
+
+                <p class="caption">
+                    My Rate a Movie Form
+                </p>
+
+            </div>
+
+            <div class="work-info">
+
+                <ul>
+                    <li>✓ HTML &amp; CSS Projects</li>
+                    <li>✓ HTML Forms</li>
+                    <li>✓ Movie Ratings and Reviews</li>
+                </ul>
+
+                <a class="repository"
+                   href="#contact">
+                    ✓ View Project
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ORDERED LIST -->
+
+        <div class="extra-lists">
+
+            <h3>My Skills</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Web Design</li>
+            </ol>
+
+
+            <!-- DESCRIPTION LIST -->
+
+            <h3>What I Learned</h3>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>Used to create the structure of a webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Used to style and design a webpage.</dd>
+
+                <dt>Forms</dt>
+                <dd>Used to collect information from users.</dd>
+
+            </dl>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT FORM -->
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="form-box">
+
+            <label>Your Name:</label>
+            <input type="text" placeholder="Kaithlyn Oseda">
+
+
+            <label>Your Email:</label>
+            <input type="email" placeholder="yourname@gmail.com">
+
+
+            <label>How did you find me?</label>
+
+            <br><br>
+
+            <input type="radio" name="find" value="Facebook">
+            Facebook
+
+            <input type="radio" name="find" value="Google">
+            Google
+
+            <input type="radio" name="find" value="Friends">
+            Friends
+
+            <br><br>
+
+
+            <label>Interested In:</label>
+
+            <br><br>
+
+            <input type="checkbox" name="interest" value="Web Design">
+            Web Design
+
+            <input type="checkbox" name="interest" value="Graphic Design">
+            Graphic Design
+
+            <input type="checkbox" name="interest" value="Robotics">
+            Robotics
+
+            <br><br>
+
+
+            <label>Rate my Portfolio:</label>
+
+            <select>
+                <option>-- Select Rating --</option>
+                <option>⭐⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐</option>
+            </select>
+
+
+            <label>Any Feedback?</label>
+
+            <textarea placeholder="Feedback here..."></textarea>
+
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 <span>Kaithlyn Oseda</span>. All rights reserved.
+</footer>
+
+</body>
+</html>
